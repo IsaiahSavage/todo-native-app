@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { Keyboard, KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Task from './components/Task';
 
@@ -21,13 +20,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      
-      {/* Today's Tasks */}
       <View style={styles.tasksWrapper}>
         <Text style={styles.section}>Today's tasks</Text>
 
+        {/* Display tasks */}
         <View style={styles.items}>
-          {/* This is where the tasks will go */}
           {
             taskItems.map((item, index) => {
               return (
